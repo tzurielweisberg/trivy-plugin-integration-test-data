@@ -1,0 +1,29 @@
+{
+	"pr": {
+		"secret_high_count": 4,
+		"vuln_high_count":4,
+		"vuln_medium_count":3,
+		"misconf_high_count":2,
+		"secret_file":{
+			"content":"password=\"123jgkdefudruewfr\"",
+			"file_name":"pr_secret_file.yml"
+		},
+		"vuln_file":{
+			"content":"<Project Sdk=\"Microsoft.NET.Sdk\">\n\n    <PropertyGroup>\n        <TargetFramework>net6.0</TargetFramework>\n        <RootNamespace>IntroductionToEventSourcing.GettingStateFromEvents</RootNamespace>\n    </PropertyGroup>\n\n    <ItemGroup>\n        <PackageReference Include=\"FluentAssertions\" Version=\"6.7.0\" />\n        <PackageReference Include=\"Marten\" Version=\"5.10.1\" />\n        <PackageReference Include=\"System.Net.Http\" Version=\"4.3.0\" />\n        <PackageReference Include=\"Microsoft.NET.Test.Sdk\" Version=\"17.3.2\" />\n        <PackageReference Include=\"xunit\" Version=\"2.4.2\" />\n        <PackageReference Include=\"xunit.runner.visualstudio\" Version=\"2.4.5\">\n            <PrivateAssets>all</PrivateAssets>\n            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>\n        </PackageReference>\n        <PackageReference Include=\"coverlet.collector\" Version=\"3.1.2\">\n            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>\n            <PrivateAssets>all</PrivateAssets>\n        </PackageReference>\n    </ItemGroup>\n\n</Project>",
+			"file_name":"proj.csproj"
+		},
+		"misconf_file":{
+			"content":"FROM golang:1.18-alpine3.15",
+			"file_name":"Dockerfile.pr"
+		}
+		
+	},
+	"push": {
+		"secret_high_count": 5,
+		"vuln_high_count":4,
+		"vuln_medium_count":3,
+		"misconf_high_count":2
+		
+		
+	}
+}
