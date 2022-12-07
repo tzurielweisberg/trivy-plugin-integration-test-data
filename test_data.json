@@ -1,10 +1,5 @@
 {
-	"pr": {
-		"secret_high_count": 4,
-		"vuln_high_count":4,
-		"vuln_medium_count":3,
-		"misconf_high_count":2,
-		"secret_file":{
+	"secret_file":{
 			"content":"password=\"123jgkdefudruewfr\"",
 			"file_name":"pr_secret_file.yml"
 		},
@@ -15,7 +10,14 @@
 		"misconf_file":{
 			"content":"FROM golang:1.18-alpine3.15",
 			"file_name":"Dockerfile.pr"
-		}
+		},
+	
+	"pr": {
+		"secret_high_count": 4,
+		"vuln_high_count":4,
+		"vuln_medium_count":3,
+		"misconf_high_count":2
+		
 		
 	},
 	"push": {
