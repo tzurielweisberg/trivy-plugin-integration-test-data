@@ -1,4 +1,4 @@
-"{
+{
 	"secret_file":{
 			"content":"password=\"123jgkdefudruewfr\"",
 			"file_name":"pr_secret_file.yml"
@@ -28,4 +28,4 @@
 		
 		
 	}
-}"
+}
